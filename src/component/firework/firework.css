@@ -1,0 +1,99 @@
+.explosion-firework {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explosion-firework div span:nth-child(12) {
+    position: absolute;
+    top: 8%;
+    left: 52px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(11) {
+    position: absolute;
+    top: 22%;
+    left: 22px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(10) {
+    position: absolute;
+    top: 40%;
+    left: 6px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(9) {
+    position: absolute;
+    top: 61%;
+    left: 13px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(8) {
+    position: absolute;
+    top: 80%;
+    left: 55px;
+    opacity: 0;
+
+}
+
+.explosion-firework div span:nth-child(7) {
+    position: absolute;
+    top: 85%;
+    right: 90px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(6) {
+    position: absolute;
+    top: 83%;
+    right: 60px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(5) {
+    position: absolute;
+    top: 70%;
+    right: 27px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(4) {
+    position: absolute;
+    top: 48%;
+    right: 7px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(3) {
+    position: absolute;
+    top: 26%;
+    right: 15px;
+    opacity: 0;
+}
+
+.explosion-firework div span:nth-child(2) {
+    position: absolute;
+    top: 10%;
+    right: 45px;
+    opacity: 0;
+}
+
+.explosion-firework div span:first-child {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+}
+
+.explosion-firework div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) and (min-width: 320px){
+    .menu2 .desktop {
+        display: none;
+    }
+    .admin_left_side_nav.inactive_panel {
+        left: -180px;
+        transition: 0.8s ease;
+    }
+    
+    .admin_left_side_nav {
+        transition: 0.8s ease;
+        z-index: 99;
+    }
+    .dashboard_content{
+        left: 0px;
+    }
+    
+.ant-table.ant-table-default.ant-table-scroll-position-left {
+    overflow-x: auto;
+}
+
+.customDopList.house_account_item .random_select_user_item {
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 768px){
+    .mobile_view {
+        display: none;
+    }
+}

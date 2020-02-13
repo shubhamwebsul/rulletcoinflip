@@ -1,0 +1,205 @@
+@import './variables.scss';
+.leaderboards{ 
+  .modal-header {
+    border-bottom: 1px solid #212121;
+    background:$model-header;
+    padding: 0px;
+    .content_1.col-md-3 {
+      padding: 25px 15px;
+      background-color: $title;
+      .Weekly p {
+        margin-bottom: 0px;
+        font-size: 12px;
+        font-weight: 600;
+        }
+    }
+    .custommenu {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      ul.menulist {
+        margin: 20px 0px 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 80%;
+        margin-left: 20%;
+        text-transform: uppercase;
+        li {
+          width: 105px;
+          display: inline-block;
+          padding: 5px 9px;
+          font-size: 12px;          
+          font-family: aero;
+          cursor: pointer;
+          color:$action-bar-text;
+          &:first-child img{
+            width: 30px;
+          }
+          img {
+            vertical-align: top;
+            padding-right: 6px;
+            width: 25px; 
+            filter: brightness(200%) grayscale(100%) saturate(100%) contrast(200%);           
+        }
+        .act-highroller,.act-coinflip {
+          filter: none !important; 
+        }
+      &:hover{
+        color:$model-text !important;
+        img{
+          filter:none !important;
+        }
+      }
+      }
+      .menu-name {
+        display: inline-block;
+    }
+    }
+  }
+  }  
+  tbody tr {
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background:$model-header;
+    color: #c3c3c3;
+    height: 60px;
+    border-radius: 4px;
+    padding: 0 0px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    td {
+      font-size: 12px;
+      font-weight: 600;
+      color:$model-text;
+      span {
+        color:$red-color;
+      }
+    }
+      td:first-child {
+        min-width: 30px !important;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+        height: 100%;
+        vertical-align: -webkit-baseline-middle;
+        line-height: 3;
+        margin-right: 10px;
+        background-color:$title;
+      }
+      &:nth-of-type(odd) {
+        background-color: $model-header !important;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $red-color;
+          opacity: 0.03;
+        }
+      }
+      td:nth-child(2) {
+        text-align: center;
+        padding: 0px;
+        span {
+          width: 40px;
+          display: block;    
+          height: 40px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+        }
+      }
+  }
+    .modal-body {
+      padding: 0px 24px;
+      min-height: 250px;
+      max-height: 60vh;
+      height: auto;
+      .content_1,
+      .content_2 {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+      th {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent;
+      }
+  }
+  
+  .modal-dialog {
+    max-width: 1000px;
+  }  
+
+  tbody tr td:nth-child(3) {
+    min-width: 140px;
+    max-width: 140px;
+  }
+  tbody tr 
+  
+  tbody tr td:nth-child(4) {
+    font-weight: 600;
+  }
+  
+  table.table-dark {
+    background-color: transparent;
+  }  
+  .modal-body th {
+    padding: 20px 0;
+  }
+  
+  .modal-header table {
+    margin-bottom: 0px;
+  }
+  
+  .modal-header table th {
+    border: 0px;
+    text-align: center;
+    font-size: 12px;
+    word-break: break-word;
+  }
+  
+  .modal-footer .btn-primary {
+    width: auto;
+    background-color: $red-color;
+    transition: 0.5s ease;
+    font-size: 14px;
+    font-weight: 400;
+    &:hover {
+      background: $red-color;
+    }
+  }
+  
+  
+}
+.isResponsiveActiveLeaderboardsTitle{
+  display: none;
+}
+@media screen and (max-width:768px){
+.custom_content_2{
+  position: absolute;
+  top: 33px;
+}
+.isResponsiveLeaderboardHiddenTitle{
+  display: none;
+}
+.isResponsiveActiveLeaderboardsTitle{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.custom_content_1{
+  margin-bottom: 20px;
+  margin-left: 95px;
+}
+}
+
+

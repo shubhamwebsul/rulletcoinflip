@@ -1,0 +1,94 @@
+@import '../modals/variables.scss';
+.wallet{
+    .modal-body{
+        padding:0px;
+        scrollbar-width: none;
+        height: auto;
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+    }
+    .wll-new {
+        .max-h {
+            line-height: 4;
+            padding: 15px 0px 15px 15px;
+            label {
+                margin-bottom: 0px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            input{
+                background-color: $transparent;
+                border-color: $border-color-2;
+                font-size: 11px;
+                font-weight: 600;
+                height: 45px;
+                border-right: none;
+                color:$text-color;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            button{
+                border-left:none;
+                border-color: $border-color-2;
+                .fa {
+                    background-color: $red-color;
+                    padding: 6px;
+                    color: $model-text;
+                    border-radius: 5px;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+        .nav-tabs{
+            border-bottom:none;
+            background-color: $model-header;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            a{
+                border:none;
+                color: #495057;
+                font-weight: 700;                
+            }
+            .active {
+                background-color: $transparent; 
+                border-color: $transparent; 
+                font-weight: 700;
+                color:$model-text;
+            }
+        }
+        .barcode-depo {
+            display: flex;
+            padding:15px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .modal-footer{
+        background-color: $modelbody;
+        border:none;
+        .depo-cre {
+            float: left;
+            width: 100%;
+            text-align: center;
+            p {
+                font-size: 12px;
+                color: $text-color;
+                font-weight: 600;
+                span{
+                    color:$red-color;
+                }
+            }
+        }
+    }
+}
+.bitcoinCloseButton{
+    position: absolute;
+    right: 0px;
+    border: 1px;
+    z-index: 10000;
+}

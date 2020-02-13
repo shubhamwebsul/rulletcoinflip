@@ -1,0 +1,288 @@
+@import "../modals/variables.scss";
+
+.history {
+  display: flex;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  span {
+    p {
+      color: $model-text;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 89%;
+    height: 2px;
+    background-color: $border-color;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+
+    @media screen and (max-width: $break-xxl) {
+      right: 1%;
+      width: 95%;
+    }
+
+    @media screen and (max-width: $break-xml) {
+      width: 93%;
+    }
+
+    @media screen and (max-width: $break-xl) {
+      width: 92%;
+    }
+
+    @media screen and (max-width: $break-large) {
+      right: 20px;
+      top: 8px;
+      width: 89%;
+    }
+
+    @media screen and (max-width: $break-small) {
+      right: 1%;
+      width: 70%;
+    }
+  }
+}
+
+.history-2 {
+  display: flex;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  span {
+    p {
+      color: $model-text;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 89%;
+    height: 2px;
+    background-color: $border-color;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+
+    @media screen and (max-width: $break-xxl) {
+      right: 1%;
+      width: 94%;
+    }
+
+    @media screen and (max-width: $break-xml) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $break-xl) {
+      width: 89%;
+    }
+
+    @media screen and (max-width: $break-large) {
+      right: 20px;
+      top: 8px;
+      width: 84%;
+    }
+
+    @media screen and (max-width: $break-small) {
+      right: 1%;
+      width: 60%;
+    }
+  }
+}
+
+.second {
+  ul {
+    padding-left: 0px;
+    text-align: left;
+    display: flex;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: left;
+      margin: 6px;
+      border: 1px solid $border-color;
+      padding: 10px 10px;
+      border-radius: 6px;
+      font-size: 8px;
+      width: 19%;
+      color: $text-color;
+      height: 45px;
+      line-height: 3;
+
+      img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+    }
+
+    li.s-last {
+      text-align: center !important;
+      color: $model-text !important;
+      background-color: #2a2a37;
+      cursor: pointer;
+      &:hover {
+        background-color: $purple;
+        border-color: $purple;
+      }
+    }
+
+    li.last {
+      text-align: center !important;
+      color: $model-text !important;
+      background-color: $red-color;
+      cursor: pointer;
+      &:hover {
+        background-color: $purple;
+        border-color: $purple;
+      }
+    }
+  }
+}
+
+.cumatcheswrapper {
+  background-color: $model-header;
+
+  .twhite {
+    color: $model-text;
+  }
+
+  .tred {
+    color: $red-color;
+  }
+
+  &:nth-child(odd) {
+    background-color: $header-back;
+  }
+
+  .team-hlskins {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+
+    .cfskii {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      line-height: 5;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .provablyfairtopbtn {
+    background: #2a2a37;
+    color: $model-text !important;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-left: 6px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $purple;
+    }
+  }
+
+  .ggred img {
+    width: 80px;
+  }
+}
+.isResposiveHistoryButton {
+  display: none;
+}
+.isResposiveButton{
+    display: none;
+}
+.BottomHistoryMatch{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .history:after {
+    display: none;
+  }
+  .history-2:after {
+    display: none;
+  }
+  .sec-history {
+    display: none;
+  }
+  .isResposiveHistoryButton {
+    display: block;
+    list-style-type: none;
+    display: inline-block;
+
+    border: 1px solid #1f1f2b;
+    padding: 1px 10px;
+    border-radius: 6px;
+    font-size: 8px;
+    width: 44%;
+    color: #3e3e4f;
+    height: 32px;
+    line-height: 3;
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #2a2a37;
+    cursor: pointer;
+    position: absolute;
+    top: -7px;
+  }
+  .isResposiveButton{
+    display: block;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+    border: 1px solid #1f1f2b;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    height: 45px;
+    line-height: 3;
+    width: 100%;
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #f93e3f;
+    cursor: pointer;
+  }
+  .isHiddenHistory{
+    display: none;
+  }
+  .team-skin-values{
+    margin-right: -75px;
+  }
+  .isResponsiveHistoryMatchHide{
+    position: absolute;
+    margin-top: 66px;
+    margin-left: 35.8%;
+  }
+  .BottomHistoryMatch{
+    display: block;
+    width: 200px;
+    margin: auto;
+    height: 28px;
+    background: #20202d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .isResponsiveHistoryMatchShow{
+    position: absolute;
+  }
+
+}

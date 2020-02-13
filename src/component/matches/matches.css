@@ -1,0 +1,64 @@
+.isActiveResponsiveNumber {
+  display: none;
+}
+.isResponsiveActiveBottomButtonGroup{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .isResponsiveNumber {
+    display: none;
+  }
+  .isActiveResponsiveNumber {
+    display: block;
+    margin-right: 0px;
+    font-size: 9px;
+    position: absolute;
+    left: 155px;
+  }
+  .isResposiveHiddenButtonGroup {
+    display: none;
+  }
+  .isResponsiveActiveBottomGroup {
+    display: block;
+    width: 230px;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 36px;
+    background: #20202d;
+  }
+  .joinCustomButton {
+    border: 1px solid #1f1f2b;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 2;
+    color: #fff !important;
+    background-color: #f93e3f;
+  }
+  .cancelCustomButton{
+    border: 1px solid #1f1f2b;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 2;
+    color: #fff !important;
+    background-color: #2a2a37;
+  }
+  .watchCustomButton{
+    border: 1px solid #1f1f2b;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 2;
+    color: #fff !important;
+    background-color: #2a2a37;
+  }
+  .isResponsiveActiveBottomButtonGroup{
+    display: flex;
+    /* padding: 2px; */
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}

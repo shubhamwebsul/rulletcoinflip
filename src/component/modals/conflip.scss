@@ -1,0 +1,146 @@
+.coinflip{
+    .modal-dialog {
+        max-width: 900px;
+    }
+    .headding {
+        font-weight: 500;
+        color: #ffffff;
+    }
+    // .content_1 .user1 img,
+    // .content_2 .user2 img {
+    // width: 100%;
+    // height: auto;
+    // }
+    // .content_2 .image_wrapper.winner span {
+    //     left: 78%;
+    //     top: 50%;
+    //     bottom: unset;
+    //     transform: translate(-50%, -50%) rotateY(3600deg);
+    //     transition: 5s ease;
+    // }
+
+    // .content_1 .image_wrapper.winner span {
+    //     left: 50%;
+    //     top: 50%;
+    //     bottom: unset;
+    //     transform: translate(-50%, -50%) rotateY(3600deg);
+    //     transition: 5s ease;
+    // }
+    // .content_1 .user1,
+    // .content_2 .user2 {
+    //     width: 120px;
+    //     display: inline-block;
+    //     vertical-align: middle;
+    //     position: relative;
+    //     border-radius: 10px;
+    //     background-color: transparent;
+    // }
+
+    // .content_1 .user1 img,
+    // .content_2 .user2 img {
+    //     border-radius: 10px;
+    //     border: 6px solid transparent;
+    // }
+
+
+
+    // .content_2 {
+    //     text-align: right;
+    // }
+
+    // .content {
+    //     display: inline-flex;
+    //     flex-wrap: wrap;
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+
+    // }
+
+    // .content .name,
+    // .content .chance {
+    //     width: 100%;
+    // }
+
+    // .content .name {
+    //     color: #ffffff;
+    //     font-weight: 600;
+    //     font-size: 18px;
+    //     font-family: "Montserrat", sans-serif;
+    // }
+
+    // .content .chance {
+    //     color: #ffffff;
+    //     font-weight: 600;
+    //     font-size: 16px;
+    //     font-family: "Montserrat", sans-serif;
+    // }
+
+    // .user_info {
+    //     margin-top: 20px;
+    //     padding-top: 10px;
+    //     padding-bottom: 10px;
+    //     border-top: 1px solid #505050;
+    //     border-bottom: 1px solid #505050;
+    //     text-align: center;
+    //     position: relative;
+    //     z-index: 9;
+    // }
+
+    .content_2 .user_info {
+        margin-left: auto;
+    }
+
+    // .user_info label {
+    //     margin-bottom: 0px;
+    //     padding-left: 10px;
+    //     padding-right: 10px;
+    //     color: #a5a5a5;
+    //     font-weight: 500;
+    // }
+
+    // .user_info span {
+    //     vertical-align: middle;
+    //     font-weight: 500;
+    //     color: white;
+    // }
+
+    // .content_2 .image_wrapper span {
+    //     height: 60px;
+    //     width: 60px;
+    //     display: block;
+    //     position: absolute;
+    //     left: -24px;
+    //     bottom: -24px;
+    //     background-position: center;
+    //     background-size: 227%;
+    //     z-index: 1;
+    // }
+
+    // .content_1 .image_wrapper span {
+    //     height: 60px;
+    //     width: 60px;
+    //     display: block;
+    //     position: absolute;
+    //     right: -24px;
+    //     bottom: -24px;
+    //     background-position: center;
+    //     background-size: 227%;
+    //     z-index: 1;
+    // }
+
+    .content_1 .user1.loser:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+   
+    .image_wrapper{
+        position: relative;
+    } 
+}

@@ -1,0 +1,347 @@
+@import '../modals/variables.scss';
+.coinflip-watch{
+    .modal-dialog{     
+        .modal-header{
+            height: 130px;
+            .game-center {
+                background-color: #181824;
+                width: 75%;
+                float: left;
+                height: 170px;
+                max-width: 19%;
+                border-radius: 50%;
+                z-index: 9;
+            }
+            .first-info {
+                text-align: right;
+                margin-right:30px;
+            }
+            .information {
+                height: 100%;
+                display: table;
+                width: 12%;
+                float: left;
+                p {
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                    display: table-cell;
+                    vertical-align: bottom;
+                    padding-bottom: 15px;
+                    img{
+                        margin: 0px 5px;
+                        &:first-child {
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .modal-body{
+            overflow: visible;
+            // height: auto;
+            // max-height: unset;
+            min-height: auto !important;
+            max-height: unset !important;
+            height: auto;
+            .win-pop-max {
+                width: 100%;
+                max-width: 78%;
+                margin: 0 auto;
+                .content_1 .user1 img{
+                    width: 125px;
+                    height: auto;
+                }
+                .content_2 .user2 img {
+                    width: 125px;
+                    height: auto;
+                    }
+                
+                .content_1 {
+                    margin-top: -100px;  
+                    .user_details {
+                        display: block;
+                        align-items: center;
+                        .image_wrapper{
+                            position: relative;
+                            .user1{
+                                width:100%;
+                                border-radius: 50%;
+                                max-width: 45%;
+                                margin: 0 auto;
+                                vertical-align: middle;
+                                position: relative;
+                                background-color: transparent;
+                                img{
+                                    border-radius: 50%;
+                                }
+                            }
+                            span {
+                                height: 60px;
+                                width: 60px;
+                                display: block;
+                                position: absolute;
+                                right: 54%;
+                                bottom: -24px;
+                                background-position: center;
+                                background-size: 227%;
+                                z-index: 1;
+                            }
+                        }
+                        .winner {
+                            span {
+                                right: 50%;
+                                top: 50%;
+                                bottom: unset;
+                                transform: translate(50%, -50%) rotateY(3600deg);
+                                transition: 5s ease;
+                            }
+                            div{
+                                &:after{
+                                    content: '';
+                                    position: absolute;
+                                    z-index: -1;
+                                    left: 6px;
+                                    top: 6px;
+                                    width: calc(100% - 12px);
+                                    height: calc(100% - 12px);
+                                    background: $table-background;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .user1{
+                                img{
+                                    border: 6px solid transparent;
+                                }
+                            }
+                        }
+                        .loser::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: -1px;
+                            bottom: 0;
+                            background-color: #00000080;
+                            border-radius: 50%;
+                            width: 125px;
+                            margin: 0 auto;
+                          }
+                    }            
+                }
+                .content_2 {
+                    margin-top: -100px;
+                    .user_details {
+                        display: block;
+                        align-items: center;
+                        .image_wrapper{
+                            position: relative;
+                            .user2 {
+                                border-radius: 50%;
+                                max-width: 45%;
+                                margin: 0 auto;
+                                img {
+                                    border-radius: 50%;
+                                }
+                            }
+                            span {
+                                height: 60px;
+                                width: 60px;
+                                display: block;
+                                position: absolute;
+                                left: 54%;
+                                bottom: -20px;
+                                background-position: center;
+                                background-size: 227%;
+                                z-index: 1;
+                            }                                           
+                        } 
+                        .winner {
+                            span {
+                                left: 50%;
+                                top: 50%;
+                                bottom: unset;
+                                transform: translate(-50%, -50%) rotateY(3600deg);
+                                transition: 5s ease;
+                            }
+                            div{
+                                &:after{
+                                    content: '';
+                                    position: absolute;
+                                    z-index: -1;
+                                    left: 6px;
+                                    top: 6px;
+                                    width: calc(100% - 12px);
+                                    height: calc(100% - 12px);
+                                    background: $table-background;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .user2 {
+                                img {
+                                    border:6px solid transparent;
+                                }
+                            }
+                        } 
+                        .loser::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: -1px;
+                            bottom: 0;
+                            background-color: #00000080;
+                            width: 125px;
+                            border-radius: 50%;
+                            margin: 0 auto;
+                          }
+                    }
+                    
+                }                
+                .open_lobby{
+                    .user_details {
+                        max-width: 45%;
+                        margin: 0 auto;
+                        .user2 {
+                            border-radius: 50%;
+                            position: relative;
+                            .white-image-coin {
+                                position: absolute;
+                                width: 50px;
+                                right: -8px;
+                                bottom: -10px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                } 
+                 
+            }
+        }
+        .content {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 30px;
+            text-align: center;
+            .name {
+                width: 100%;
+                max-width:100%;
+                color: $model-text;
+                font-weight: 600;
+                font-size: 14px;
+                font-family: "Montserrat", sans-serif;
+            }
+            .chance {
+                width: 100%;
+                color: $text-color;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: "Montserrat", sans-serif;
+            }
+    
+        }
+        .user_info {
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            text-align: center;
+            position: relative;
+            z-index: 9;
+            label {
+                margin-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: $model-text;
+                font-weight: 500;
+            }
+            span {
+                vertical-align: middle;
+                font-weight: 500;
+                color: $model-text;
+            }
+        }
+          .content__ {
+            padding-top: 15px;
+            tbody {
+                tr {
+                    height: 72px;
+                    td{
+                        span.avtar {
+                            width: 45px;
+                            height: 45px;
+                            display: block;
+                            background-size: contain;
+                            background-color: $modelbody;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            border-radius: 50%;
+                            border: 4px solid transparent;
+                          }
+                        &:first-child {
+                            min-width: 55px !important;
+                            width: 24% !important;
+                            max-width: 55px !important;
+                            position: relative;
+                            padding-left: 14px;
+                            span.dot {
+                                position: absolute;
+                                top: 4px;
+                                left: 4px;
+                                background-color: #ff9400;
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                            }
+                          }
+                          &:nth-child(2) {
+                            word-break: break-word;
+                            width: 43% !important;
+                            p{
+                                margin-bottom: 0px;
+                                text-align: left;
+                                &:nth-child(2){
+                                    color:#ff9400;
+                                }
+                            }
+                          }
+                          &:nth-child(3) {
+                            min-width: 54px;
+                            width: 33% !important;
+                            max-width: unset;
+                            width: unset;
+                            text-align: right;
+                            span{
+                                color:#ff9400;
+                            }
+                          }
+                    }
+                }
+            }
+          }
+          .gameing {
+            margin-top: -180px;
+            .img-responsive1{
+                z-index: 9;
+            }
+        }
+    }    
+    .modal-footer{
+        border-top:0px;
+        background-color:$modelbody;
+        .fix {
+            width: 100%;
+            float: left;
+            text-align: center;
+            p {
+                font-size: 8px;
+                width: 100%;
+                color:$text-color;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

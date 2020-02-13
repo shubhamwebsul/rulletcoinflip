@@ -1,0 +1,70 @@
+@import '../modals/variables.scss';
+.faq{
+    background-color: #161621;
+    .first {
+        display: flex;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        &::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            position: absolute;
+            border: 1px solid;
+            top: 20px;
+            
+            @media screen and (max-width:$break-xxl){
+                left: 8%; 
+            }
+            @media screen and (max-width:$break-xml){
+                left: 12%;
+            }
+            @media screen and (max-width:$break-xl){
+                left: 15%;
+            }
+            @media screen and (max-width:$break-large){
+                left: 21%;
+            }
+            @media screen and (max-width:$break-small){
+                left: 70%;
+            }
+        }
+    }
+        .accordion{
+            .card{
+                background: transparent;
+                margin-bottom: 15px;
+                border-radius: 5px !important;
+                border: 1px solid $border-color !important;
+                .card-header {
+                    position: relative;
+                    color: $model-text;
+                    text-align: left;
+                    p{
+                        margin-bottom: 0px;
+                        color:$model-text;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                    button {
+                        position: absolute;
+                        top: 7px;
+                        right: 0;
+                        color: $red-color;
+                    }
+                }
+                    .card-body{
+                        p{
+                            color:$text-color !important;
+                            text-align: left;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }            
+                
+            }
+        }        
+   
+}

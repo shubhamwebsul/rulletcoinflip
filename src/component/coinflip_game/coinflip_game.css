@@ -1,0 +1,105 @@
+
+.coinflip .wrapper_games .coinflipgame img {
+  width: 100%;
+  height: auto;
+  }
+  
+
+
+  /* **** */
+
+  .customModal.leaderboards .modal-body .content_2 .user_details {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    }
+    
+    .customModal.leaderboards .modal-body .content_1 .user_details {
+    display: flex;
+    align-items: center;
+    }
+
+
+
+    /* ***** */
+
+  .customModal.coinflip .modal-body {
+      min-height: 80vh;
+      max-height: 80vh;
+  }
+  
+  .customModal.leaderboards .modal-body .content_1 .user_details,
+  .customModal.leaderboards .modal-body .content_2 .user_details {
+      padding-top:50px;
+      padding-bottom:50px
+  }
+  
+
+  
+
+
+  /* ******** */
+
+  .wrapper_games {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@keyframes rotatecoin {
+  0% {
+    background-position:0%;
+    transition: ease-in;
+  }
+  100% {
+    background-position:100%;
+    transition: ease-in;
+  }
+}
+
+
+@keyframes animate_bg {
+	from {
+		background-position: 0;
+	}
+
+	to {
+		background-position: 0 450px;
+	}
+}
+
+ .image_wrapper.winner > div {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 0rem;} 
+	
+  .image_wrapper.winner > div:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #399953;
+		background-repeat: no-repeat;
+		background-size: 52% 52%, 52% 52%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#f40000, #fbb300), linear-gradient(#f40000, #fbb300), linear-gradient(#f40000, #fbb300), linear-gradient(#f40000, #fbb300);
+		animation: rotate 4s linear 2;
+	}
+	
+	.image_wrapper.winner > div:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+	}

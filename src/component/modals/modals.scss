@@ -1,0 +1,57 @@
+@import '../modals/variables.scss';
+.customModal{
+
+    .modal-body::-webkit-scrollbar {
+        width: 5px;
+      }
+      .modal-body::-webkit-scrollbar {
+        background-color: $modelbody;
+      }
+      .modal-body::-webkit-scrollbar-thumb {
+        background-color: $modelbody;
+      }
+      .modal-header, .modal-footer{
+        background-color: $model-header;
+      }
+      .modal-body {
+        overflow-y: scroll;
+        height: 470px;
+        scrollbar-width: none;
+      }
+      .modal-body {
+        background: #1e1e29 !important;
+        padding: 0px 26px;
+        font-size: 15px;
+      }
+      .modal-body p {
+        word-break: break-word;
+      }
+      .modal-header .close span {
+        color: #58585f;
+        font-weight: normal;
+        font-size: 29px;
+        display: block;
+        border-radius: 50%;
+        width: 31px;
+        height: 31px;
+        text-shadow: none;
+      }
+      .modal-header .close {
+        opacity: 1;
+      }
+      .modal-dialog {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+      }
+      button:focus {
+        outline: none
+    }
+    .table-dark td, .table-dark th, .table-dark thead th {
+        border-color: transparent;
+    }
+    
+}
